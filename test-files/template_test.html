@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+  	<ul>
+  		{% for item in items %}
+  		<li>{{ escape(item) }}</li>
+  		{% end %}
+  	</ul>
+  	<p>{{ linkify(Something Awful "http://somethingawful.com!"") }}</p>
+  	<b>Test Hello World Templates</b>
+  </body>
+</html>
